@@ -1,7 +1,7 @@
 annotated-types==0.6.0
 anyio==4.3.0
 click==8.1.7
-dnspython==2.6.1
+dnspython==1.16.0
 email_validator==2.1.1
 et-xmlfile==1.1.0
 Faker==25.0.0
@@ -14,7 +14,7 @@ openpyxl==3.1.2
 pandas==2.2.2
 pydantic==2.7.1
 pydantic_core==2.18.2
-pymongo==4.7.0
+pymongo==3.11.0
 python-dateutil==2.9.0.post0
 python-dotenv==1.0.1
 python-multipart==0.0.9
