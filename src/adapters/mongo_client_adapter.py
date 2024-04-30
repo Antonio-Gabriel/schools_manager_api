@@ -8,10 +8,7 @@ class MongoClientAdapter:
 
     def __init__(self) -> None:
         if not MongoClientAdapter._instance:
-            self.client = MongoClient(
-                os.getenv("MONGO_HOST"),
-                username=os.getenv("MONGO_USERNAME"),
-                password=os.getenv("MONGO_PASSWORD"))
+            self.client = MongoClient(os.getenv("MONGO_CLUSTER_URI"), ssl=True)
             from pymongo import ASCENDING
             self.ASCENDING = ASCENDING
 
