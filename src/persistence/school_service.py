@@ -9,6 +9,7 @@ from src.persistence.dto.update_school_request_dto import (
 from src.persistence.school_repository import SchoolRepository
 from src.persistence.exceptions.school_not_found import SchoolNotFound
 from src.persistence.exceptions.email_already_exists import EmailAlreadyExists
+from src.persistence.exceptions.invalid_number_of_rooms import InvalidNumberOfRooms
 from src.persistence.exceptions.province_not_available import (
     ProvinceNotAvailable
 )
@@ -37,6 +38,10 @@ class SchoolService:
             raise EmailAlreadyExists(
                 "Email already exists associated to an institution")
 
+        if school_model.numberOfRooms <= 0:
+            raise InvalidNumberOfRooms(
+                "The number of rooms should be at least 1")
+
         if not self.__provinces_service.find_province(school_model.province):
             raise ProvinceNotAvailable("Province choosed not available")
 
@@ -60,7 +65,7 @@ class SchoolService:
         for school_model in school_models:
             if not school_model.email in existing_emails and (
                 self.__provinces_service.find_province(school_model.province)
-            ):
+            ) and school_model.numberOfRooms > 0:
                 existing_emails.add(school_model.email)
                 self.__school_service.save(school_model)
 
@@ -106,6 +111,10 @@ class SchoolService:
             if self.__school_service.get_by_email(school_model.email):
                 raise EmailAlreadyExists(
                     "Email already exists associated to an institution")
+
+        if school_model.numberOfRooms <= 0:
+            raise InvalidNumberOfRooms(
+                "The number of rooms should be at least 1")
 
         if not self.__provinces_service.find_province(school_model.province):
             raise ProvinceNotAvailable("Province choosed not available")
