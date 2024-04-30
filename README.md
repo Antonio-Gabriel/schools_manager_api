@@ -14,11 +14,11 @@ An application to manage informations about schools.
 
 - [x] Adding stractegies to upload bulk data from excel about schools and persits into the database
 
-- [] If the document being sent is not in the format: name, email, room number, province, it will not be accepted.
+- [x] If the document being sent is not in the format: name, email, room number, province, it will not be accepted.
 
 - [x] If the document sent is empty, it will also return an error.
 
-- [] Publish the image of the project in dockerhub
+- [x] Publish the image of the project in dockerhub
 
 ## How to start
 
