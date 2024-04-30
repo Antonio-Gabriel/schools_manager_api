@@ -15,6 +15,16 @@ services:
       - mongodb:/data/db
       - mongoconfig:/data/configdb
 
+  api:
+    build:
+      context: .
+    restart: always
+    container_name: schools_manager_app
+    ports:
+      - '8000:8000'
+    depends_on:
+      - mongodb
+
 volumes:
   mongodb:
   mongoconfig:
