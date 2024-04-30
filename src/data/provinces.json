@@ -1,0 +1,78 @@
+{
+    "Angola": {
+      "Provincias": [
+        {
+          "nome": "Bengo",
+          "capital": "Caxito"
+        },
+        {
+          "nome": "Benguela",
+          "capital": "Benguela"
+        },
+        {
+          "nome": "Bié",
+          "capital": "Kuito"
+        },
+        {
+          "nome": "Cabinda",
+          "capital": "Cabinda"
+        },
+        {
+          "nome": "Cuando Cubango",
+          "capital": "Menongue"
+        },
+        {
+          "nome": "Cuanza Norte",
+          "capital": "N'dalatando"
+        },
+        {
+          "nome": "Cuanza Sul",
+          "capital": "Sumbe"
+        },
+        {
+          "nome": "Cunene",
+          "capital": "Ondjiva"
+        },
+        {
+          "nome": "Huambo",
+          "capital": "Huambo"
+        },
+        {
+          "nome": "Huíla",
+          "capital": "Lubango"
+        },
+        {
+          "nome": "Luanda",
+          "capital": "Luanda"
+        },
+        {
+          "nome": "Lunda Norte",
+          "capital": "Dundo"
+        },
+        {
+          "nome": "Lunda Sul",
+          "capital": "Saurimo"
+        },
+        {
+          "nome": "Malanje",
+          "capital": "Malanje"
+        },
+        {
+          "nome": "Moxico",
+          "capital": "Luena"
+        },
+        {
+          "nome": "Namibe",
+          "capital": "Moçâmedes"
+        },
+        {
+          "nome": "Uíge",
+          "capital": "Uíge"
+        },
+        {
+          "nome": "Zaire",
+          "capital": "M'banza-Kongo"
+        }
+      ]
+    }
+  }

@@ -1,0 +1,2 @@
+class SchoolNotFound(Exception):
+    pass

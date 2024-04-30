@@ -1,0 +1,2 @@
+class ProvinceNotAvailable(Exception):
+    pass
