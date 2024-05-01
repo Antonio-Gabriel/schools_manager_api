@@ -42,9 +42,9 @@ python3 main.py
 
 To find the documentation of hosted api click on the link below:
 
-[Swagger documentation](https://)
+[Swagger documentation](https://schools-manager-api.onrender.com/docs#/)
 
-[DockerHub hosted project](https://)
+[DockerHub hosted project](https://hub.docker.com/repository/docker/antoniogabriel534/webapi/general)
 
 ## Where I can get faker data
 
