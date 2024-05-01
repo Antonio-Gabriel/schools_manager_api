@@ -48,7 +48,9 @@ To find the documentation of hosted api click on the link below:
 
 ## Where I can get faker data
 
-On the project root dir you can find a script called `seed_excel_data.py`, the script was made to generate fake data related to institution, although that's not perfect, but you can use to do it.
+In the root directory of the project, you can find a script called `seed_excel_data.py`, the script was made to generate false data related to the institution, although it is not perfect, but you can use it to do this.
+
+You can also find a file called `schools.xlsx` which already has around 1000 fake schools generated that you can use to upload them.
 
 to run do the command below:
 
